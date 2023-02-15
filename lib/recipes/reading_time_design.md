@@ -23,6 +23,20 @@ if word_length / 200 >= 200
 * conditional to see if it will take more then a hour
 
 3. Examples as test
-
+ it "if should return bad grammer since last letter isnt punctuation mark and first character isnt first letter " do
+        expect(grammer("hello WORLD")).to eq "Your grammer is incorrect."
+    end
+    it "should return incorrect as last character isnt punctuation mark" do
+        expect(grammer("Hello world")).to eq "Your grammer is incorrect"
+    end
+    it "should return correct as last character is punctuation mark and first char is upcase" do
+        expect(grammer("Hello world!")).to eq "Good grammar!"
+    end
+    it "should return incorrect as last character isnt punctuation mark" do
+        expect(grammer("Hello world.")).to eq "Good grammar!"
+    end
+    it "should return incorrect as nothing is inputted" do
+        expect(grammer("")).to eq "Your grammer is incorrect"
+    end
 
 
