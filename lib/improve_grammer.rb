@@ -5,4 +5,4 @@ def grammar(text)
  elsif text[0] == text[0].upcase && punctuation.include?(text[-1])
     return "Good grammar"
  else  
-    return "Your grammer is incorrect"
+    return "Your grammar is incorrect"
