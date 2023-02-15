@@ -1,0 +1,3 @@
+def grammer(text)
+    
+end
