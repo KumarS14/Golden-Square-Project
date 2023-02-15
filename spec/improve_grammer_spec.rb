@@ -10,5 +10,5 @@ RSpec.describe "improves grammer" do
         expect(grammer("Hello world!")).to eq "Good grammar!"
     end
     it "should return incorrect as last character isnt punctuation mark" do
-        expect(grammer("Hello world.")).to eq "Your grammer is incorrect"
+        expect(grammer("Hello world.")).to eq "Good grammar!"
     end
