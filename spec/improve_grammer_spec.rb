@@ -15,3 +15,4 @@ RSpec.describe "improves grammer" do
     it "should return incorrect as nothing is inputted" do
         expect(grammer("")).to eq "Your grammer is incorrect"
     end
+   
