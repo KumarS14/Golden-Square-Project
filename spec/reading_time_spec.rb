@@ -5,7 +5,7 @@ RSpec.describe "reading_time" do
         expect(reading_time(words)).to eq "less then one minute"
     end
     it "returns 60 minutes when 12000 words are passed as a argument" do
-        words = "hi" * 12000
+        words = "hi " * 12000
         expect(reading_time(words)).to eq "60 minutes"
     end
 end
