@@ -15,7 +15,6 @@ splits the program into a array so we can see if the first part has the todo
 input.split[0]
 splits and tells us what the first part of the array is which should be #TODO
 
-while input != "stop"
 
 end
 this loops the program so multiple todos can be inputted
@@ -39,15 +38,15 @@ it "doesnt store input if the beggining doesnt have #todo do
     expect(user_tasks("hello how are you")).to eq "you have no current tasks"
 end
 it "user should enter 3 tasks that have the todo and it should ouput amount and what they are "
-    expect(user_tasks("#TODO homework * 3)).to eq (you have 3 tasks currently these are the tasks : ["#TODO homework #TODO homework #TODO homework "]
+    expect(user_tasks("#TODO homework" * 3)).to eq (you have 3 tasks currently these are the tasks : ["#TODO homework #TODO homework #TODO homework "]
 end
 
 it "user should enter 6 tasks that have the todo and it should ouput amount and what they are "
-    expect(user_tasks("#TODO homework * 3)).to eq (you have 3 tasks currently these are the tasks : ["#TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework "]
+    expect(user_tasks("#TODO homework * 6)).to eq (you have 6 tasks currently these are the tasks : ["#TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework "]
 end
 
 it "user should enter 9 tasks that have the todo and it should ouput amount and what they are "
-    expect(user_tasks("#TODO homework * 3)).to eq (you have 9 tasks currently these are the tasks : ["#TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework  "]
+    expect(user_tasks("#TODO homework * 9)).to eq (you have 9 tasks currently these are the tasks : ["#TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework  "]
 end
 
 

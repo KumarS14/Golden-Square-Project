@@ -1,6 +1,6 @@
 require 'tasks_todo.rb'
-RSpec.describe "user tasks" do
-    it "expects that program should say there is one tasks and print that task" do
-        expect(user_tasks("#TODO shopping")).to eq "you have one tasks currently these are the tasks : [#TODO shopping]"
+RSpec.describe "todo tasks" do
+    it "expects program to output You have no current tasks" do
+        expect(todo_tasks("#COMPLETED gym")).to eq "You have no current tasks"
     end
 end
