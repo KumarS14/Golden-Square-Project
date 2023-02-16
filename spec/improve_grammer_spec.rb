@@ -1,18 +1,19 @@
 require 'improve_grammer.rb'
-RSpec.describe "improves grammer" do
+RSpec.describe "improves grammar" do
     it "if should return bad grammer since last letter isnt punctuation mark and first character isnt first letter " do
-        expect(grammer("hello WORLD")).to eq "Your grammer is incorrect."
+        expect(grammar("hello WORLD")).to eq "Your grammar is incorrect."
     end
     it "should return incorrect as last character isnt punctuation mark" do
-        expect(grammer("Hello world")).to eq "Your grammer is incorrect"
+        expect(grammar("Hello world")).to eq "Your grammar is incorrect."
     end
     it "should return correct as last character is punctuation mark and first char is upcase" do
-        expect(grammer("Hello world!")).to eq "Good grammar!"
+        expect(grammar("Hello world!")).to eq "Good grammar!"
     end
     it "should return incorrect as last character isnt punctuation mark" do
-        expect(grammer("Hello world.")).to eq "Good grammar!"
+        expect(grammar("Hello world.")).to eq "Good grammar!"
     end
     it "should return incorrect as nothing is inputted" do
-        expect(grammer("")).to eq "Your grammer is incorrect"
+        expect(grammar("")).to eq "Your grammer is incorrect."
     end
+end
    
