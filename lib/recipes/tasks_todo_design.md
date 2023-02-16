@@ -20,16 +20,11 @@ end
 this loops the program so multiple todos can be inputted
 and breaks when input == stop
 
-todo = []
-this initializes the array so that todos can be stored separatley so they can be counted and printed
-
-todo.push(input) if input.split[0] == "#TODO"
-
 end 
-if todo.length == 0 
+if input.split.length == 0 
     puts "you have no current tasks"
 else
-    puts "you have #{todo.length}" tasks currently these are the tasks : #{todo} "
+    puts "you have #{todo.count(#TODO)" tasks currently these are the tasks : #{todo} "
 end
 
 3. examples of tests
