@@ -1,6 +1,5 @@
-def todo_tasks(input)
-    tasks = []
-    tasks.push(input) if input.split[0] == "#TODO"
-    return "You have no current tasks" if tasks.length == 0
-    return "You have #{tasks.length} these are the tasks : #{tasks.join}"
+
+def user_tasks(input)
+    return "There are currently 0 tasks at the moment" if input.split[0] != "#TODO"
+    return "You have #{input.count('#TODO') / 5} task to be doing this is the task :#{input.split("#TODO").join("")}"
 end
