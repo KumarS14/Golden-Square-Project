@@ -24,7 +24,7 @@ end
 if input.split.length == 0 
     puts "you have no current tasks"
 else
-    puts "you have #{todo.count(#TODO)" tasks currently these are the tasks : #{todo} "
+    puts "you have #{todo.count(#TODO) / 5" tasks currently these are the tasks : #{todo} "
 end
 
 3. examples of tests
@@ -41,7 +41,7 @@ it "user should enter 6 tasks that have the todo and it should ouput amount and 
 end
 
 it "user should enter 9 tasks that have the todo and it should ouput amount and what they are "
-    expect(user_tasks("#TODO homework * 9)).to eq (you have 9 tasks currently these are the tasks : ["#TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework #TODO homework  "]
+    expect(user_tasks("#TODO homework * 9)).to eq (you have 9 tasks currently these are the tasks : [" homework  homework homework homework homework #TODO homework #TODO homework #TODO homework #TODO homework  "]
 end
 
 
