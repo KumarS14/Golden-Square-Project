@@ -8,4 +8,8 @@ class Tasks_todo
         return nil if @tasks == nil
         return @tasks.join(",")
     end
+    def complete_task(completed)
+        @tasks.delete(completed)
+        return @tasks.join(",")
+    end
 end
