@@ -4,8 +4,8 @@ class Tasks_todo
     end
 
     def add_task(task)
-        @tasks.push(task)
+        @tasks.push(task) if task != ""
         return nil if @tasks == nil
-        return @tasks.join
+        return @tasks.join(",")
     end
 end

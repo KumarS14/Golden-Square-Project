@@ -7,4 +7,7 @@ RSpec.describe Tasks_todo do
     it "expects program to output 1 task" do
         expect(user_task.add_task("swimming")).to eq "swimming"
     end
+    it "expects program to output 2 tasks" do
+        expect(user_task.add_task("jogging")).to eq "swimming,jogging"
+    end
 end
