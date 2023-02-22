@@ -6,6 +6,6 @@ class User_music
     def music(song)
         fail "You have not entered input" if song == ""
         @music_list.push(song)
-        return @music_list.join (",")
+        return @music_list.join (", ")
     end
 end
