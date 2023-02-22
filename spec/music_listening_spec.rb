@@ -15,4 +15,11 @@ RSpec.describe User_music do
        musics.music("beatles")
         expect(musics.music("beat it")).to eq "beatles, beat it"
     end
+
+    it "returns the beatles , beat it , vanilla ice " do
+        musics = User_music.new
+       musics.music("beatles")
+       musics.music("beat it")
+        expect(musics.music("vanilla ice")).to eq "beatles, beat it, vanilla ice"
+    end
 end
