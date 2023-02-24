@@ -7,5 +7,9 @@ RSpec.describe Todo do
     it "tests to see if task returns swimming" do
         todos = Todo.new("swimming")
         expect(todos.task).to eq "swimming"
-      end
+    end
+    it "tests to see if task returns running" do
+        todos = Todo.new("running")
+        expect(todos.task).to eq "running"
+    end
 end
