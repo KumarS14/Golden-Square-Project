@@ -21,7 +21,13 @@ class TodoList
     end
   
     def complete
-      
+      complete = []
+      @tasks.each do |taski|
+        if taski.done? == true
+          complete << taski
+        end
+      end
+      return complete
     end
   
     def give_up!
