@@ -8,8 +8,7 @@ class Todo
       return @task.to_s
     end
   
-    def mark_done!(mark)
-        @mark = mark
+    def mark_done!
         @done = true
       # Marks the todo as done
       # Returns nothing
