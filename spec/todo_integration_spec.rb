@@ -10,15 +10,14 @@ RSpec.describe "Integration testing" do
             to_do.add(task1)
             expect(to_do.incomplete).to eq [task,task1]
         end
-        it "should return three list values" do
+        it "should return one list values" do
             to_do = TodoList.new
             task = Todo.new("swimming")
             task1 = Todo.new("running")
-            task2 = Todo.new("jogging")
+            task1.mark_done!
             to_do.add(task)
             to_do.add(task1)
-            to_do.add(task2)
-            expect(to_do.incomplete).to eq [task,task1,task2]
+            expect(to_do.incomplete).to eq [task]
         end
     end
 end

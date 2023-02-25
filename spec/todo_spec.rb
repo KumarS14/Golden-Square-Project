@@ -20,7 +20,7 @@ RSpec.describe Todo do
 
         it "should return true" do
             todo = Todo.new("running")
-            todo.mark_done!("training")
+            todo.mark_done!
             expect(todo.done?).to eq true
         end
     end
