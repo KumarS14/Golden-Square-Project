@@ -1,1 +1,0 @@
-# Design for Solo Project
