@@ -10,12 +10,13 @@ class TodoList
   
     def incomplete
       incomplete = []
-      @tasks.each do |a_task|
-        if a_task.mark_done!
-          incomplete.push(a_task.task)
-        end
+    
+     @tasks.each do |taski|
+      if taski.done? == false
+        incomplete << taski
       end
-
+    end
+    return incomplete
         
     end
   
