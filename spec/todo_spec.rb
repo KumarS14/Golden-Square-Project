@@ -12,14 +12,18 @@ RSpec.describe Todo do
         todos = Todo.new("running")
         expect(todos.task).to eq "running"
     end
-    it "should return training as we havent put value in done" do
-        todo = Todo.new("running")
-        expect(todo.done?).to eq nil
+    context "test for done and mark done if nil" do
+        it "should return nil as we havent put value in done" do
+            todo = Todo.new("running")
+            expect(todo.done?).to eq false
+        end
+
+        it "should return true" do
+            todo = Todo.new("running")
+            todo.mark_done!("training")
+            expect(todo.done?).to eq true
+        end
     end
 
-    it "should return training as we havent put value in done" do
-        todo = Todo.new("running")
-        todo.mark_done!("training")
-        expect(todo.done?).to eq "training"
-    end
+
 end
