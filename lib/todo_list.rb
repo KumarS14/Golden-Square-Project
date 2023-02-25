@@ -31,6 +31,6 @@ class TodoList
     end
   
     def give_up!
-      # Marks all todos as complete
+      return @tasks
     end
   end
