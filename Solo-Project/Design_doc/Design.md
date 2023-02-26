@@ -12,25 +12,8 @@ focus on the details you see as important, not everything. The diagram below
 uses asciiflow.com but you could also use excalidraw.com, draw.io, or miro.com_
 
 ```
-┌────────────────────────────┐
-│ MusicPlayer                │
-│                            │
-│ - add(track)               │
-│ - all                      │
-│ - search_by_title(keyword) │
-│   => [tracks...]           │
-└───────────┬────────────────┘
-            │
-            │ owns a list of
-            ▼
-┌─────────────────────────┐
-│ Track(title, artist)    │
-│                         │
-│ - title                 │
-│ - artist                │
-│ - format                │
-│   => "TITLE by ARTIST"  │
-└─────────────────────────┘
+<img width="645" alt="Screenshot 2023-02-26 at 08 49 25" src="https://user-images.githubusercontent.com/117657839/221400995-17f8c24b-5eeb-40c6-b2b2-25d0d6c97e78.png">
+
 ```
 
 _Also design the interface of each class in more detail._
