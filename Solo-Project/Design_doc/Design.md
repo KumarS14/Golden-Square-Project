@@ -11,39 +11,42 @@ _Consider diagramming out the classes and their relationships. Take care to
 focus on the details you see as important, not everything. The diagram below
 uses asciiflow.com but you could also use excalidraw.com, draw.io, or miro.com_
 
-```
-<img width="645" alt="Screenshot 2023-02-26 at 08 49 25" src="https://user-images.githubusercontent.com/117657839/221400995-17f8c24b-5eeb-40c6-b2b2-25d0d6c97e78.png">
 
-```
 
 _Also design the interface of each class in more detail._
 
 ```ruby
-class MusicLibrary
+class Order
   def initialize
     # ...
   end
 
-  def add(track) # track is an instance of Track
-    # Track gets added to the library
+  def add(menu) # menu is an instance of Menu
+    # menu gets added to the library
     # Returns nothing
   end
 
-  def all
-    # Returns a list of track objects
-  end
-  
-  def search_by_title(keyword) # keyword is a string
-    # Returns a list of tracks with titles that include the keyword
+  def verify_order(item)
+    @items = []
+    menu.each do|key|
+     @items.push[key] if key.fetch(item) == true
+     else "This item is not on our menu
   end
 end
 
-class Track
-  def initialize(title, artist) # title and artist are both strings
+class Rest_menu
+  def initialize
+    @menu = {
+      chips => 2,
+      burger = > 3,
+      fries = 1.5
+    }
   end
-
-  def format
-    # Returns a string of the form "TITLE by ARTIST"
+ def the_menu
+    return menu
+  end
+   def show_menu
+    return the_menu
   end
 end
 ```
